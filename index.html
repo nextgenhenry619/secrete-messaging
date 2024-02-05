@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+     integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col s10 offset-s1">
+            <div id="message-show" class="card-panel hide">
+                <h1></h1>
+                    <div id="href">
+                        <a href="./index.html">Create your own Secrete Message!😺</a>
+                    </div>
+                </div>
+                <div id="message-form" class="card-panel">
+                <form id="ismForm">
+                    <label>Enter A Secret Message</label>
+                    <input id="message-input"/>
+                    <button class="btn waves-effect waves-light" 
+                    >Submit
+                    <i class="material-icons right">
+                    send</i></button>
+                    </button>
+                </form>
+            </div>
+            </div>
+            <div id="link-form" class="card-panel hide">
+            <div class="share">
+                Share this link with a friend!😁
+                <input id="link-input"/>
+            </div>
+            </div>  
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+</script>
+<script src="script.js"></script>
+</html>
